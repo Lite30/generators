@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <label for="url">Enter URL</label>
+        <form onsubmit="generateQR(event)">
+            <button class="refresh-button" onclick="refreshQR()" style="margin-left: auto; display: block;">Refresh</button>
+            <input type="text" id="url" placeholder="Enter URL, e.g., https://www.google.com">
+            <button type="submit">Generate QR Code</button>
+        </form>
+         <div id="qrCode"></div>
+    </div>
+
+        <div class="footer">
+            <div id="social-test">
+                <h6>Follow me on social media</h6>
+                <ul class="social">
+                    <li><a href="https://www.instagram.com/litebohomaseli/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/Lite30"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
